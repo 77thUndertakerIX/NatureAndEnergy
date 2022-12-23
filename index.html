@@ -169,9 +169,9 @@
         button.style.height = "80px"
         button.style.fontSize = "24px"
 
-        document.getElementById('song').play()
         button.addEventListener('click', function() {
             loader.style.display ="none"
+            document.getElementById('song').play()
             console.log('Button was clicked');
         });
 })
