@@ -8,10 +8,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 #preloader p{
     font-size: 20px;
     color: rgb(255, 0, 0);
     margin-top: 15%;
+}
+
+#srt-btn{
+    background-color: hotpink;
+    border: none;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    position:absolute;
+    margin-top: 25%;
 }

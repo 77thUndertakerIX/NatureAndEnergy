@@ -21,7 +21,9 @@
     </head>
     <body>
         <div id="preloader">
-            <p>loading <span id="preloaderText"></span></p>
+            <p><span id="preloaderText"></span></p>
+            <button id="srt-btn">Click me</button>
+
         </div>
         <div id="side-bar" class="side-bar">
         <div class="side-bar-container" id="side-bar-container">
@@ -139,7 +141,8 @@
 </div>
 
 <script>
-    const text = "....  Please wait  ...."
+    const text = "Loading ....  Please wait  ...."
+    const button = document.getElementById('srt-btn');
     let velocity = 100;
     let count = 0;
     let TextLenght = text.length
@@ -158,9 +161,19 @@
     }
     var loader = document.getElementById('preloader');
     window.addEventListener("load",function(){
-        loader.style.display ="none"
-        document.getElementById('song').play()
+        const preloaderText = document.getElementById('preloaderText')    
         clearInterval(preloaderInterval)
+        preloaderText.innerHTML = "WebPage is ready!"
+
+        button.style.width = "80px"
+        button.style.height = "80px"
+        button.style.fontSize = "24px"
+
+        document.getElementById('song').play()
+        button.addEventListener('click', function() {
+            loader.style.display ="none"
+            console.log('Button was clicked');
+        });
 })
 </script>
 
