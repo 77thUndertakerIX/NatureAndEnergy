@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<head>
+<html>
 
-    <title>การอนุรักษณ์พลังงานและสิ่งแวดล้อม</title>
+    <head>
+        
+        <title>การอนุรักษณ์พลังงานและสิ่งแวดล้อม</title>
+        
+        <link rel="stylesheet" href="css/body.css">
+        <link rel="stylesheet" href="css/style-header.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/side-bar.css">
+        <link rel="stylesheet" href="css/below-bar.css">
+        <link rel="stylesheet" href="css/preloader.css">
+        
+        <script src="script/typing-eff.js"></script>
+        <script src="script/script-bar.js"></script>
+        <script src="script/music-handler.js"></script>
+        <script src="script/content.js"></script>
 
-    <link rel="stylesheet" href="css/body.css">
-    <link rel="stylesheet" href="css/style-header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/side-bar.css">
-    <link rel="stylesheet" href="css/below-bar.css">
-
-    <script src="script/typing-eff.js"></script>
-    <script src="script/script-bar.js"></script>
-    <script src="script/music-handler.js"></script>
-    <script src="script/content.js"></script>
-
-</head>
-<body>
-
-    <div id="side-bar" class="side-bar">
+        
+    </head>
+    <body>
+        <div id="preloader">
+            <p>loading... please wait</p>
+        </div>
+        <div id="side-bar" class="side-bar">
         <div class="side-bar-container" id="side-bar-container">
-
+            
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div>
                 
@@ -42,7 +48,7 @@
                 
             </div>
         </div>
-       
+        
     </div>
     <div id="container">
         <div>
@@ -54,7 +60,7 @@
                         <li><a style="text-decoration: none; color: rgb(0, 255, 94); "href="#">สิ่งแวดล้อมคือ (coming soon..)</a></li>
                         <li><a style="text-decoration: none; color: rgb(0, 255, 94);" href="#">พลังงานคือ (coming soon..)</a></li>
                         <li><a style="text-decoration: none; color: rgb(0, 255, 94);" href="#">การอนุรักษณ์พลังงานและสิ่งแวดล้อม (coming soon..)</a></li>
-
+                        
                     </ul>
                 </div>
             </div>
@@ -63,11 +69,11 @@
                 <h2>and provides <span class="typing-eff" id="typing-eff2"></span> for us</h2>
             </div>
         </div>
-
-       <!--
         
-           <img src="Sea.png" class="bg-img">
-       --> 
+        <!--
+            
+            <img src="Sea.png" class="bg-img">
+        --> 
         <div class="Music-bar">
             <div class="MusicBox">
                 <img src="../image/playbtn.png" id="Musicbtn" onclick="PlayNPauseMusic()">
@@ -86,13 +92,13 @@
             </audio>
             <!--
                 <aduio src="music/Under Water Sound FX.mp3" id="song" autoplay></aduio>
-
+                
             -->
             
         </div>
-
+        
         <div class="below-nav">
-
+            
             <div class="blnav-btn" id="blnav-btn">
                 <span style="
                     color: rgb(103, 171, 255);
@@ -103,35 +109,42 @@
                 </span>
             </div>
             <div class="MOption" id="MOption">
-
+                
                 <div class="side-contact">
-    
+                    
                     <span style="
                     color: rgb(255, 103, 103);
                     cursor:pointer ;
                     padding-left: 1.2%;"
                     onclick="openNav()">
                     &#9776;Contact
-                    </span>
-                    
-                </div>
-
-                <div class="SubJ">
-                    <div><a href="#" id="subject">ภาษาที่ใช้เขียน</a></div>
-                    <div><a href="#" id="subject">เกี่ยวกับโรงเรียน</a></div>
-                    <div><a href="#" id="subject">coming soon...</a></div>
-                    <div><a href="#" id="subject">coming soon...</a></div>
-                </div>
-                <div class="blclosebtn">
-                    <a href="javascript:void(0)" style="color: crimson; text-decoration: none;" onclick="closeMorebtn()" >&times;</a>
-                </div>
+                </span>
                 
             </div>
-
+            
+            <div class="SubJ">
+                <div><a href="#" id="subject">ภาษาที่ใช้เขียน</a></div>
+                <div><a href="#" id="subject">เกี่ยวกับโรงเรียน</a></div>
+                <div><a href="#" id="subject">coming soon...</a></div>
+                <div><a href="#" id="subject">coming soon...</a></div>
+            </div>
+            <div class="blclosebtn">
+                <a href="javascript:void(0)" style="color: crimson; text-decoration: none;" onclick="closeMorebtn()" >&times;</a>
+            </div>
+            
         </div>
-
+        
     </div>
+    
+</div>
 
+<script>
+    var loader = document.getElementById('preloader');
+    window.addEventListener("load",function(){
+    loader.style.display ="none"
+})
+</script>
 
 
 </body>
+</html>
