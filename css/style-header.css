@@ -1,0 +1,11 @@
+html,body{
+    padding:0;
+    margin:0;
+}
+body{
+    background-image: url("../image/Sea.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+

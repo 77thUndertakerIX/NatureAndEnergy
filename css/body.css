@@ -1,0 +1,100 @@
+.main-body{
+    background-color: rgba(142, 158, 252, 0.132);
+    max-width: 85%;
+    height: fit-content;
+    right:7%;
+    top:70%;
+    border-radius: 10%;
+    transition: 1.5s;
+    z-index: 2;
+    position: absolute;
+    opacity: 0.9;
+    color: white;
+    overflow-y: hidden;
+    
+}
+
+.main-body:hover {
+    transform: translateY(-80%);
+    font-size: 30px;
+    padding: 5%;
+  }
+.content{
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-body p{
+    text-align: center;
+}
+
+.bg-img{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+}
+
+.content{
+    height: 0;
+}
+
+.typing-box{
+    z-index: 1;
+    position: absolute;
+    float: none;
+    top:20%;
+    left: 6%;
+    color: white;
+}
+.typing-box h1{
+    font-size: 95px;
+
+}
+.typing-box h2{
+    font-size: 40px;
+}
+.typing-eff{
+    font-size: 50px;
+    color: rgb(0, 255, 94);
+}
+
+.Music-bar{
+    float:none;
+    position:absolute;
+    z-index: 1;
+    top:5%;
+    right: 4%;
+    color: white;
+    font-size: 20px;
+    width:30%;
+}
+.songname{
+    border: 1px solid pink;
+}
+.songname p{
+    margin:auto;
+    text-align: center;
+    width: fit-content;
+}
+
+#Musicbtn {
+    width: 40%;
+    height: 40%;
+    opacity: 0.4;
+    cursor: pointer;
+}
+.MusicBox{
+    width: auto;
+    display:flex;
+    flex-direction: row-reverse;
+}
+.MusicBox div{
+    display: flex;
+    justify-content: center;
+}
+.MusicBox div p{
+    color: rgb(103, 171, 255);
+    text-align: center;
+    margin:auto;
+}

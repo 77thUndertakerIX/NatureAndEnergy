@@ -1,0 +1,102 @@
+.side-bar{
+  transition: 1.5s;
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  width: 0;
+  overflow-x:hidden;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  background-image: url("../image/GalaxyBG2.jpg");
+  display: flex;
+  align-items: center;
+}
+.side-bar-container{
+  margin: auto;
+}
+.side-bar-container div h1{
+  text-align: center;
+  color: pink;
+}
+.side-contact{
+  width: auto;
+  font-size: 30px;
+  height: fit-content;
+  color: white;
+  border-radius: 15%;
+  
+}
+
+.side-bar a{
+    color: white;
+    text-decoration: none;
+    text-align:center;
+    font-size: larger;
+    transition: 0.5s;
+    padding: 5%;
+}
+.innersidebar a{
+  display: block;
+}
+
+  .innersidebar a:hover {
+    color: #ff0000;
+    font-size: large;
+    transition:1.5s;
+  }
+  
+  .side-bar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+
+/* Facebook */
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-instagram {
+background: #fe0000;
+color: white;
+}
+
+.profile-pic{
+
+border-radius: 50%;
+width: 50%;
+height: 50%;
+border-color: aqua; 
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+
+.profile-pic:hover{
+transition: 0.5s;
+opacity: 0.8;
+transform: scale(1.2);
+}
+.icon-box{
+
+text-align: center;
+margin-bottom: 10%;
+margin-top:10%;
+font-size: small;
+}
+.icon-box a:hover{
+  border-radius: 45%;
+}
+
