@@ -1,8 +1,7 @@
 window.onload = function() {
     const mainBodyElement = document.querySelector('.main-body');
     const content_box = document.getElementById("content");
-    const typingBox = document.querySelector(".typing-box");
-    
+
     mainBodyElement.addEventListener('mouseenter', () => {
       console.log('mouseEnter')
       content_box.style.height = "100%"

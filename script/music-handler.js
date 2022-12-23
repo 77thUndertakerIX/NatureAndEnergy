@@ -1,6 +1,6 @@
 let Interval;
 
-window.onload = function PlayNPauseMusic() {
+function PlayNPauseMusic() {
   const audio = document.getElementById("song");
   const icon = document.getElementById("Musicbtn");
   const Playing = "Now Playing";
