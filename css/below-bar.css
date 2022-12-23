@@ -1,17 +1,17 @@
-.below-nav{
-    width:70%;
-    display:flex;
+.below-nav {
+    width: 70%;
+    display: flex;
     overflow-x: hidden;
-    bottom: -15px;
-    float:none;
-    position: absolute;
-    height: 10%;
-    background-color:  rgba(60, 19, 143, 0.058);
+    float: none;
+    position: fixed;
+
+    background-color: rgba(60, 19, 143, 0.058);
     border-top: 1px solid pink;
     margin-left: 16%;
-    padding-top:1%;
-
-}
+    padding-top: 1%;
+    bottom: 0;
+  }
+  
 .blnav-btn{
     margin-left: 50%;
     font-size: 30px;

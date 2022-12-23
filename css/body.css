@@ -3,7 +3,7 @@
     max-width: 85%;
     height: fit-content;
     right:7%;
-    top:70%;
+    top:60%;
     border-radius: 10%;
     transition: 1.5s;
     z-index: 2;
@@ -15,7 +15,7 @@
 }
 
 .main-body:hover {
-    transform: translateY(-80%);
+    transform: translateY(-70%);
     font-size: 30px;
     padding: 5%;
   }

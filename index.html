@@ -21,7 +21,7 @@
     </head>
     <body>
         <div id="preloader">
-            <p>loading... please wait</p>
+            <p>loading <span id="preloaderText"></span></p>
         </div>
         <div id="side-bar" class="side-bar">
         <div class="side-bar-container" id="side-bar-container">
@@ -123,10 +123,10 @@
             </div>
             
             <div class="SubJ">
-                <div><a href="#" id="subject">ภาษาที่ใช้เขียน</a></div>
-                <div><a href="#" id="subject">เกี่ยวกับโรงเรียน</a></div>
-                <div><a href="#" id="subject">coming soon...</a></div>
-                <div><a href="#" id="subject">coming soon...</a></div>
+                <div><a href="https://www.w3schools.com/html/default.asp" id="subject">ภาษาที่ใช้เขียน</a></div>
+                <div><a href="https://skw.ac.th/" id="subject">เกี่ยวกับโรงเรียน</a></div>
+                <div><a href="index.html" id="subject">coming soon...</a></div>
+                <div><a href="index.html" id="subject">coming soon...</a></div>
             </div>
             <div class="blclosebtn">
                 <a href="javascript:void(0)" style="color: crimson; text-decoration: none;" onclick="closeMorebtn()" >&times;</a>
@@ -139,10 +139,29 @@
 </div>
 
 <script>
+    const text = "....  Please wait  ...."
+    let velocity = 100;
+    let count = 0;
+    let TextLenght = text.length
+    let preloaderInterval = setInterval(preloaderText,velocity)
+
+    function preloaderText() {
+        console.log(counter)
+        const preloaderText = document.getElementById('preloaderText')    
+        if(count < TextLenght+1){
+            preloaderText.innerHTML += text.charAt(count)
+            count++
+        }else{
+            preloaderText.innerHTML = ""
+            count = 0
+        }
+    }
     var loader = document.getElementById('preloader');
     window.addEventListener("load",function(){
-    loader.style.display ="none"
-    document.getElementById('song').play()
+        clearInterval(preloaderInterval)
+        loader.style.opacity = "0.5"
+        loader.style.display ="none"
+        document.getElementById('song').play()
 })
 </script>
 
