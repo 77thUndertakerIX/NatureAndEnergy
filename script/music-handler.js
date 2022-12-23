@@ -1,5 +1,3 @@
-
-
 let Interval;
 
 function PlayNPauseMusic() {
@@ -55,5 +53,7 @@ function BtnLV() {
 Interval = setInterval(BtnLV, 25);
 
 
-
+window.onload = function(){
+  document.getElementById('song').play()
+}
 
