@@ -5,8 +5,8 @@ const text2 = "ENERGY";
 const typingEffElement1 = document.getElementById("typing-eff");
 const typingEffElement2 = document.getElementById("typing-eff2");
 
-window.onload= function() {
-  function typingEffect() {
+
+function typingEffect() {
     if (counter < text1.length + 1) {
       document.getElementById("typing-eff").innerHTML += text1.charAt(counter);
       counter++;
@@ -22,5 +22,5 @@ window.onload= function() {
   }
   
   setInterval(typingEffect, speed);
-}
+
   
