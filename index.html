@@ -158,10 +158,9 @@
     }
     var loader = document.getElementById('preloader');
     window.addEventListener("load",function(){
-        clearInterval(preloaderInterval)
-        loader.style.opacity = "0.5"
         loader.style.display ="none"
         document.getElementById('song').play()
+        clearInterval(preloaderInterval)
 })
 </script>
 
