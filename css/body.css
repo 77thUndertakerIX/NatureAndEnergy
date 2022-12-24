@@ -11,7 +11,7 @@
     opacity: 0.9;
     color: white;
     overflow-y: hidden;
-    
+    text-align: center;
 }
 
 .main-body:hover {
